@@ -1,0 +1,44 @@
+
+package herenciaAplicada;
+
+import java.util.Date;
+
+public class Clientes extends Persona{
+        
+    private int idCliente;
+    private java.util.Date fechaRegistro;
+    private boolean vip;
+    private static int contadorClientes;
+    
+    public Clientes(Date fechaRegistro, boolean  vip){
+    this.idCliente = ++contadorClientes;
+    this.fechaRegistro = fechaRegistro;
+    this.vip = vip;
+    
+    idCliente=contadorClientes;
+}
+
+    Clientes(String jesus) {
+        throw new UnsupportedOperationException
+        ("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+       public int getIdCliente(){
+       return idCliente;
+     }  
+         public Date getFechaRegistro(){
+       return fechaRegistro;
+     }  
+         public boolean isVip(){
+       return vip;
+     }
+         
+       public void setVip(boolean vip){
+       this.vip =vip;
+     }
+            @Override
+        public String toString(){
+    return super.toString() + "Cliente{" + "idCliente=" + idCliente+
+                    ",fechaRegistro=" + fechaRegistro+",vip=" + vip+'}';
+    }
+}
+
