@@ -1,0 +1,57 @@
+
+
+package herenciaAplicada;
+
+
+public class HerenciaUso {
+    
+        public static void main(String[] args) {
+        Empleado e1 = new Empleado("Juan", 25000);
+        System.out.println("\nRegistro de empleado Uno :"+"Id.Empleado:"
+                +" "+e1.getIdEmpleado()+" "+ "Nombre:" + e1.getNombre()+" " + "Edad :"
+                + " " + e1.getEdad() +" " + " Genero: " + " "+ e1.getGenero()+" "
+                +" Direccion:" +" "+ e1.getDireccion() +" "+ "Sueldo:"+" "+ e1.getSueldo() );
+        
+        Empleado e2 = new Empleado("Pedro", 15000);
+        e2.setEdad(28);
+        e2.setGenero('M');
+        e2.setDireccion("Bogota,Colombia");
+        System.out.println("\nRegistro de empleado Dos :"+"Id.Empleado:"
+                +" "+e2.getIdEmpleado()+" "+ "Nombre:" + e2.getNombre()+" " + "Edad :"
+                + " " + e2.getEdad() +" " + " Genero: " + " "+ e2.getGenero()+" "
+                +" Direccion:" +" "+ e2.getDireccion()+" "+ "Sueldo:"+" "+ e2.getSueldo()  );
+        
+        Clientes c1 = new Clientes(new java.util.Date(), true);
+        c1.setEdad(17);
+        c1.setGenero('M');
+        c1.setDireccion("Bogota,Colombia");
+        System.out.println("\nRegistro de cliente Uno:" + "Id.Cliente: "+" "+ +c1.getIdCliente()
+                +" "+ "Nombre:" + c1.getNombre()+" " + "Edad :"
+                + " " + c1.getEdad() +" " + " Genero: " + " "+ c1.getGenero()+" "
+                +" Direccion:" +" "+ c1.getDireccion()+" "+"El cliente es VIP:"+" "+c1.isVip() 
+                +" "+"Fecha Registro:"+c1.getFechaRegistro());
+        
+                
+        Clientes c2 = new Clientes(new java.util.Date(), false);
+        c2.setEdad(18);
+        c2.setGenero('F');
+        c2.setDireccion("Cali,Colombia");
+        System.out.println("\nRegistro de cliente Dos:" + "Id.Cliente: "+" "+ +c2.getIdCliente()
+                +" "+ "Nombre:" + c2.getNombre()+" " + "Edad :"
+                + " " + c2.getEdad() +" " + " Genero: " + " "+ c2.getGenero()+" "
+                +" Direccion:" +" "+ c2.getDireccion()+" "+"El Cliente es VIP: "+" "+c2.isVip()
+                +" "+"Fecha Registro:"+" "+ c2.getFechaRegistro());
+              
+        
+        Persona p1 = new Persona("Luisa");
+        p1.setEdad(17);
+        p1.setGenero('F');
+        p1.setDireccion("Bogota,Colombia");
+          System.out.println("\nRegistro de Persona :" + "Nombre:" + p1.getNombre()+" " + "Edad :"
+                + " " + p1.getEdad() +" " + " Genero: " + " "+ p1.getGenero()+" "
+                +" Direccion:" +" "+ p1.getDireccion()  );
+    }
+    
+    
+}
+
